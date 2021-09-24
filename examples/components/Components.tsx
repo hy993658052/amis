@@ -9,7 +9,6 @@ export const components = [
         label: '组件介绍',
         path: '/zh-CN/components/index',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/index.md').then(
             makeMarkdownRenderer
           )
@@ -18,7 +17,6 @@ export const components = [
         label: 'Page 页面',
         path: '/zh-CN/components/page',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/page.md').then(
             makeMarkdownRenderer
           )
@@ -27,7 +25,6 @@ export const components = [
         label: 'Container 容器',
         path: '/zh-CN/components/container',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/container.md').then(
             makeMarkdownRenderer
           )
@@ -45,7 +42,6 @@ export const components = [
         label: 'Divider 分割线',
         path: '/zh-CN/components/divider',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/divider.md').then(
             makeMarkdownRenderer
           )
@@ -54,7 +50,6 @@ export const components = [
         label: 'Flex 布局',
         path: '/zh-CN/components/flex',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/flex.md').then(
             makeMarkdownRenderer
           )
@@ -63,7 +58,6 @@ export const components = [
         label: 'Grid 水平布局',
         path: '/zh-CN/components/grid',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/grid.md').then(
             makeMarkdownRenderer
           )
@@ -72,7 +66,6 @@ export const components = [
         label: 'Grid 2D 布局',
         path: '/zh-CN/components/grid-2d',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/grid-2d.md').then(
             makeMarkdownRenderer
           )
@@ -81,7 +74,6 @@ export const components = [
         label: 'HBox 布局',
         path: '/zh-CN/components/hbox',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/hbox.md').then(
             makeMarkdownRenderer
           )
@@ -90,7 +82,6 @@ export const components = [
         label: 'PaginationWrapper 分页容器',
         path: '/zh-CN/components/pagination-wrapper',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/pagination-wrapper.md').then(
             makeMarkdownRenderer
           )
@@ -99,7 +90,6 @@ export const components = [
         label: 'Panel 面板',
         path: '/zh-CN/components/panel',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/panel.md').then(
             makeMarkdownRenderer
           )
@@ -108,7 +98,6 @@ export const components = [
         label: 'Tabs 选项卡',
         path: '/zh-CN/components/tabs',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/tabs.md').then(
             makeMarkdownRenderer
           )
@@ -117,7 +106,6 @@ export const components = [
         label: 'Wrapper 包裹容器',
         path: '/zh-CN/components/wrapper',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/wrapper.md').then(
             makeMarkdownRenderer
           )
@@ -131,7 +119,6 @@ export const components = [
         label: 'Action 行为按钮',
         path: '/zh-CN/components/action',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/action.md').then(
             makeMarkdownRenderer
           )
@@ -140,7 +127,6 @@ export const components = [
         label: 'App 多页应用',
         path: '/zh-CN/components/app',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/app.md').then(
             makeMarkdownRenderer
           )
@@ -149,7 +135,6 @@ export const components = [
         label: 'Button 按钮',
         path: '/zh-CN/components/button',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/button.md').then(
             makeMarkdownRenderer
           )
@@ -158,7 +143,6 @@ export const components = [
         label: 'ButtonGroup 按钮组',
         path: '/zh-CN/components/button-group',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/button-group.md').then(
             makeMarkdownRenderer
           )
@@ -167,7 +151,6 @@ export const components = [
         label: 'Breadcrumb 面包屑',
         path: '/zh-CN/components/breadcrumb',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/breadcrumb.md').then(
             makeMarkdownRenderer
           )
@@ -176,7 +159,6 @@ export const components = [
         label: 'Custom 自定义组件',
         path: '/zh-CN/components/custom',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/custom.md').then(
             makeMarkdownRenderer
           )
@@ -185,7 +167,6 @@ export const components = [
         label: 'DropDownButton 下拉按钮',
         path: '/zh-CN/components/dropdown-button',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/dropdown-button.md').then(
             makeMarkdownRenderer
           )
@@ -194,7 +175,6 @@ export const components = [
         label: 'Service 功能型容器',
         path: '/zh-CN/components/service',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/service.md').then(
             makeMarkdownRenderer
           )
@@ -204,7 +184,6 @@ export const components = [
         label: 'Nav 导航',
         path: '/zh-CN/components/nav',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/nav.md').then(
             makeMarkdownRenderer
           )
@@ -214,7 +193,6 @@ export const components = [
         label: 'AnchorNav 锚点导航',
         path: '/zh-CN/components/anchor-nav',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/anchor-nav.md').then(
             makeMarkdownRenderer
           )
@@ -229,7 +207,6 @@ export const components = [
         label: 'Form 表单',
         path: '/zh-CN/components/form/index',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/index.md').then(
             makeMarkdownRenderer
           )
@@ -238,7 +215,6 @@ export const components = [
         label: 'FormItem 表单项通用',
         path: '/zh-CN/components/form/formitem',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/formitem.md').then(
             makeMarkdownRenderer
           )
@@ -247,7 +223,6 @@ export const components = [
         label: 'Options 选择器表单项',
         path: '/zh-CN/components/form/options',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/options.md').then(
             makeMarkdownRenderer
           )
@@ -256,7 +231,6 @@ export const components = [
         label: 'InputArray 数组输入框',
         path: '/zh-CN/components/form/input-array',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-array.md').then(
             makeMarkdownRenderer
           )
@@ -265,7 +239,6 @@ export const components = [
         label: 'Button-Toolbar 按钮工具栏',
         path: '/zh-CN/components/form/button-toolbar',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/button-toolbar.md').then(
             makeMarkdownRenderer
           )
@@ -275,7 +248,6 @@ export const components = [
         path: '/zh-CN/components/form/button-group-select',
         getComponent: () =>
           import(
-            // @ts-ignore
             '../../docs/zh-CN/components/form/button-group-select.md'
           ).then(makeMarkdownRenderer)
       },
@@ -283,7 +255,6 @@ export const components = [
         label: 'Chain-Select 链式下拉框',
         path: '/zh-CN/components/form/chain-select',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/chain-select.md').then(
             makeMarkdownRenderer
           )
@@ -292,7 +263,6 @@ export const components = [
         label: 'Checkbox 勾选框',
         path: '/zh-CN/components/form/checkbox',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/checkbox.md').then(
             makeMarkdownRenderer
           )
@@ -301,7 +271,6 @@ export const components = [
         label: 'Checkboxes 复选框',
         path: '/zh-CN/components/form/checkboxes',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/checkboxes.md').then(
             makeMarkdownRenderer
           )
@@ -310,7 +279,6 @@ export const components = [
         label: 'InputCity 城市选择器',
         path: '/zh-CN/components/form/input-city',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-city.md').then(
             makeMarkdownRenderer
           )
@@ -319,7 +287,6 @@ export const components = [
         label: 'InputColor 颜色选择器',
         path: '/zh-CN/components/form/input-color',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-color.md').then(
             makeMarkdownRenderer
           )
@@ -328,7 +295,6 @@ export const components = [
         label: 'Combo 组合',
         path: '/zh-CN/components/form/combo',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/combo.md').then(
             makeMarkdownRenderer
           )
@@ -337,7 +303,6 @@ export const components = [
         label: 'Condition-Builder 条件组合',
         path: '/zh-CN/components/form/condition-builder',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/condition-builder.md').then(
             makeMarkdownRenderer
           )
@@ -346,7 +311,6 @@ export const components = [
         label: 'InputDate 日期选择器',
         path: '/zh-CN/components/form/input-date',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-date.md').then(
             makeMarkdownRenderer
           )
@@ -355,7 +319,6 @@ export const components = [
         label: 'InputDatetime 日期时间选择器',
         path: '/zh-CN/components/form/input-datetime',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-datetime.md').then(
             makeMarkdownRenderer
           )
@@ -364,7 +327,6 @@ export const components = [
         label: 'InputMonth 月份选择器',
         path: '/zh-CN/components/form/input-month',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-month.md').then(
             makeMarkdownRenderer
           )
@@ -373,7 +335,6 @@ export const components = [
         label: 'InputDateRange 日期范围选择器',
         path: '/zh-CN/components/form/input-date-range',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-date-range.md').then(
             makeMarkdownRenderer
           )
@@ -382,7 +343,6 @@ export const components = [
         label: 'InputDatetimeRange 日期时间范围',
         path: '/zh-CN/components/form/input-datetime-range',
         getComponent: () =>
-          // @ts-ignore
           import(
             '../../docs/zh-CN/components/form/input-datetime-range.md'
           ).then(makeMarkdownRenderer)
@@ -391,7 +351,6 @@ export const components = [
         label: 'InputMonthRange 月份范围',
         path: '/zh-CN/components/form/input-month-range',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-month-range.md').then(
             makeMarkdownRenderer
           )
@@ -400,7 +359,6 @@ export const components = [
         label: 'DiffEditor 对比编辑器',
         path: '/zh-CN/components/form/diff-editor',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/diff-editor.md').then(
             makeMarkdownRenderer
           )
@@ -409,7 +367,6 @@ export const components = [
         label: 'Editor 代码编辑器',
         path: '/zh-CN/components/form/editor',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/editor.md').then(
             makeMarkdownRenderer
           )
@@ -418,7 +375,6 @@ export const components = [
         label: 'FieldSet 表单项集合',
         path: '/zh-CN/components/form/fieldset',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/fieldset.md').then(
             makeMarkdownRenderer
           )
@@ -427,7 +383,6 @@ export const components = [
         label: 'InputExcel Excel 解析',
         path: '/zh-CN/components/form/input-excel',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-excel.md').then(
             makeMarkdownRenderer
           )
@@ -436,7 +391,6 @@ export const components = [
         label: 'InputFile 文件上传',
         path: '/zh-CN/components/form/input-file',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-file.md').then(
             makeMarkdownRenderer
           )
@@ -445,7 +399,6 @@ export const components = [
         label: 'Formula 公式',
         path: '/zh-CN/components/form/formula',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/formula.md').then(
             makeMarkdownRenderer
           )
@@ -454,7 +407,6 @@ export const components = [
         label: 'Group 表单项组',
         path: '/zh-CN/components/form/group',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/group.md').then(
             makeMarkdownRenderer
           )
@@ -463,7 +415,6 @@ export const components = [
         label: 'Hidden 隐藏字段',
         path: '/zh-CN/components/form/hidden',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/hidden.md').then(
             makeMarkdownRenderer
           )
@@ -472,7 +423,6 @@ export const components = [
         label: 'InputImage 图片',
         path: '/zh-CN/components/form/input-image',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-image.md').then(
             makeMarkdownRenderer
           )
@@ -481,7 +431,6 @@ export const components = [
         label: 'Input-Group 输入框组合',
         path: '/zh-CN/components/form/input-group',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-group.md').then(
             makeMarkdownRenderer
           )
@@ -490,7 +439,6 @@ export const components = [
         label: 'ListSelect 选择器',
         path: '/zh-CN/components/form/list-select',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/list-select.md').then(
             makeMarkdownRenderer
           )
@@ -499,7 +447,6 @@ export const components = [
         label: 'LocationPicker 地理位置',
         path: '/zh-CN/components/form/location-picker',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/location-picker.md').then(
             makeMarkdownRenderer
           )
@@ -508,7 +455,6 @@ export const components = [
         label: 'UUID 随机 ID',
         path: '/zh-CN/components/form/uuid',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/uuid.md').then(
             makeMarkdownRenderer
           )
@@ -517,7 +463,6 @@ export const components = [
         label: 'MatrixCheckboxes 矩阵勾选',
         path: '/zh-CN/components/form/matrix-checkboxes',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/matrix-checkboxes.md').then(
             makeMarkdownRenderer
           )
@@ -526,7 +471,6 @@ export const components = [
         label: 'NestedSelect 级联选择器',
         path: '/zh-CN/components/form/nestedselect',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/nestedselect.md').then(
             makeMarkdownRenderer
           )
@@ -535,7 +479,6 @@ export const components = [
         label: 'InputNumber 数字输入',
         path: '/zh-CN/components/form/input-number',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-number.md').then(
             makeMarkdownRenderer
           )
@@ -544,7 +487,6 @@ export const components = [
         label: 'InputPassword 密码输入框',
         path: '/zh-CN/components/form/input-password',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-password.md').then(
             makeMarkdownRenderer
           )
@@ -553,7 +495,6 @@ export const components = [
         label: 'Picker 列表选择器',
         path: '/zh-CN/components/form/picker',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/picker.md').then(
             makeMarkdownRenderer
           )
@@ -562,7 +503,6 @@ export const components = [
         label: 'InputQuarter 季度',
         path: '/zh-CN/components/form/input-quarter',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-quarter.md').then(
             makeMarkdownRenderer
           )
@@ -572,7 +512,6 @@ export const components = [
         path: '/zh-CN/components/form/input-quarter-range',
         getComponent: () =>
           import(
-            // @ts-ignore
             '../../docs/zh-CN/components/form/input-quarter-range.md'
           ).then(makeMarkdownRenderer)
       },
@@ -580,7 +519,6 @@ export const components = [
         label: 'Radios 单选框',
         path: '/zh-CN/components/form/radios',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/radios.md').then(
             makeMarkdownRenderer
           )
@@ -589,7 +527,6 @@ export const components = [
         label: 'InputRating 评分',
         path: '/zh-CN/components/form/input-rating',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-rating.md').then(
             makeMarkdownRenderer
           )
@@ -598,7 +535,6 @@ export const components = [
         label: 'InputRange 滑块',
         path: '/zh-CN/components/form/input-range',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-range.md').then(
             makeMarkdownRenderer
           )
@@ -607,7 +543,6 @@ export const components = [
         label: 'InputRepeat 重复频率选择器',
         path: '/zh-CN/components/form/input-repeat',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-repeat.md').then(
             makeMarkdownRenderer
           )
@@ -616,7 +551,6 @@ export const components = [
         label: 'InpuRichText 富文本编辑器',
         path: '/zh-CN/components/form/input-rich-text',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-rich-text.md').then(
             makeMarkdownRenderer
           )
@@ -625,7 +559,6 @@ export const components = [
         label: 'Select 下拉框',
         path: '/zh-CN/components/form/select',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/select.md').then(
             makeMarkdownRenderer
           )
@@ -634,7 +567,6 @@ export const components = [
         label: 'InputSubForm 子表单',
         path: '/zh-CN/components/form/input-sub-form',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-sub-form.md').then(
             makeMarkdownRenderer
           )
@@ -643,7 +575,6 @@ export const components = [
         label: 'Switch 开关',
         path: '/zh-CN/components/form/switch',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/switch.md').then(
             makeMarkdownRenderer
           )
@@ -652,7 +583,6 @@ export const components = [
         label: 'Static 静态展示',
         path: '/zh-CN/components/form/static',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/static.md').then(
             makeMarkdownRenderer
           )
@@ -661,7 +591,6 @@ export const components = [
         label: 'InputTable 表格',
         path: '/zh-CN/components/form/input-table',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-table.md').then(
             makeMarkdownRenderer
           )
@@ -670,7 +599,6 @@ export const components = [
         label: 'InputTag 标签选择器',
         path: '/zh-CN/components/form/input-tag',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-tag.md').then(
             makeMarkdownRenderer
           )
@@ -679,7 +607,6 @@ export const components = [
         label: 'InputText 输入框',
         path: '/zh-CN/components/form/input-text',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-text.md').then(
             makeMarkdownRenderer
           )
@@ -688,7 +615,6 @@ export const components = [
         label: 'Textarea 多行输入框',
         path: '/zh-CN/components/form/textarea',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/textarea.md').then(
             makeMarkdownRenderer
           )
@@ -697,7 +623,6 @@ export const components = [
         label: 'InputTime 时间',
         path: '/zh-CN/components/form/input-time',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-time.md').then(
             makeMarkdownRenderer
           )
@@ -706,7 +631,6 @@ export const components = [
         label: 'InputTimeRange 时间',
         path: '/zh-CN/components/form/input-time-range',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-time-range.md').then(
             makeMarkdownRenderer
           )
@@ -715,7 +639,6 @@ export const components = [
         label: 'Transfer 穿梭器',
         path: '/zh-CN/components/form/transfer',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/transfer.md').then(
             makeMarkdownRenderer
           )
@@ -724,7 +647,6 @@ export const components = [
         label: 'TabsTransfer 组合穿梭器',
         path: '/zh-CN/components/form/tabs-transfer',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/tabs-transfer.md').then(
             makeMarkdownRenderer
           )
@@ -733,7 +655,6 @@ export const components = [
         label: 'InputTree 树形选择框',
         path: '/zh-CN/components/form/input-tree',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-tree.md').then(
             makeMarkdownRenderer
           )
@@ -742,7 +663,6 @@ export const components = [
         label: 'TreeSelect 树形选择器',
         path: '/zh-CN/components/form/treeselect',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/treeselect.md').then(
             makeMarkdownRenderer
           )
@@ -751,7 +671,6 @@ export const components = [
         label: 'InputYear 年输入',
         path: '/zh-CN/components/form/input-year',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-year.md').then(
             makeMarkdownRenderer
           )
@@ -760,7 +679,6 @@ export const components = [
         label: 'InputYearRange 年份范围',
         path: '/zh-CN/components/form/input-year-range',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/form/input-year-range.md').then(
             makeMarkdownRenderer
           )
@@ -775,7 +693,6 @@ export const components = [
         label: 'CRUD 增删改查',
         path: '/zh-CN/components/crud',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/crud.md').then(
             makeMarkdownRenderer
           )
@@ -785,7 +702,6 @@ export const components = [
         label: 'Table 表格',
         path: '/zh-CN/components/table',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/table.md').then(
             makeMarkdownRenderer
           )
@@ -794,7 +710,6 @@ export const components = [
         label: 'Table View 表格视图',
         path: '/zh-CN/components/table-view',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/table-view.md').then(
             makeMarkdownRenderer
           )
@@ -803,7 +718,6 @@ export const components = [
         label: 'Card 卡片',
         path: '/zh-CN/components/card',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/card.md').then(
             makeMarkdownRenderer
           )
@@ -812,7 +726,6 @@ export const components = [
         label: 'Cards 卡片组',
         path: '/zh-CN/components/cards',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/cards.md').then(
             makeMarkdownRenderer
           )
@@ -821,7 +734,6 @@ export const components = [
         label: 'Carousel 轮播图',
         path: '/zh-CN/components/carousel',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/carousel.md').then(
             makeMarkdownRenderer
           )
@@ -830,7 +742,6 @@ export const components = [
         label: 'Chart 图表',
         path: '/zh-CN/components/chart',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/chart.md').then(
             makeMarkdownRenderer
           )
@@ -840,7 +751,6 @@ export const components = [
         label: 'Code 代码高亮',
         path: '/zh-CN/components/code',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/code.md').then(
             makeMarkdownRenderer
           )
@@ -850,7 +760,6 @@ export const components = [
         label: 'Color 颜色',
         path: '/zh-CN/components/color',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/color.md').then(
             makeMarkdownRenderer
           )
@@ -860,7 +769,6 @@ export const components = [
         label: 'Date 日期时间',
         path: '/zh-CN/components/date',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/date.md').then(
             makeMarkdownRenderer
           )
@@ -869,7 +777,6 @@ export const components = [
         label: 'Each 循环渲染器',
         path: '/zh-CN/components/each',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/each.md').then(
             makeMarkdownRenderer
           )
@@ -879,7 +786,6 @@ export const components = [
         label: 'Html',
         path: '/zh-CN/components/html',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/html.md').then(
             makeMarkdownRenderer
           )
@@ -889,7 +795,6 @@ export const components = [
         label: 'Icon 图标',
         path: '/zh-CN/components/icon',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/icon.md').then(
             makeMarkdownRenderer
           )
@@ -898,7 +803,6 @@ export const components = [
         label: 'iFrame',
         path: '/zh-CN/components/iframe',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/iframe.md').then(
             makeMarkdownRenderer
           )
@@ -907,7 +811,6 @@ export const components = [
         label: 'Image 图片',
         path: '/zh-CN/components/image',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/image.md').then(
             makeMarkdownRenderer
           )
@@ -916,7 +819,6 @@ export const components = [
         label: 'Images 图片集',
         path: '/zh-CN/components/images',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/images.md').then(
             makeMarkdownRenderer
           )
@@ -925,7 +827,6 @@ export const components = [
         label: 'Json',
         path: '/zh-CN/components/json',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/json.md').then(
             makeMarkdownRenderer
           )
@@ -934,7 +835,6 @@ export const components = [
         label: 'Link 链接',
         path: '/zh-CN/components/link',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/link.md').then(
             makeMarkdownRenderer
           )
@@ -943,7 +843,6 @@ export const components = [
         label: 'List 列表',
         path: '/zh-CN/components/list',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/list.md').then(
             makeMarkdownRenderer
           )
@@ -952,7 +851,6 @@ export const components = [
         label: 'Log 实时日志',
         path: '/zh-CN/components/log',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/log.md').then(
             makeMarkdownRenderer
           )
@@ -961,7 +859,6 @@ export const components = [
         label: 'Mapping 映射',
         path: '/zh-CN/components/mapping',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/mapping.md').then(
             makeMarkdownRenderer
           )
@@ -970,7 +867,6 @@ export const components = [
         label: 'Markdown 渲染',
         path: '/zh-CN/components/markdown',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/markdown.md').then(
             makeMarkdownRenderer
           )
@@ -979,7 +875,6 @@ export const components = [
         label: 'Progress 进度条',
         path: '/zh-CN/components/progress',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/progress.md').then(
             makeMarkdownRenderer
           )
@@ -988,7 +883,6 @@ export const components = [
         label: 'Steps 步骤条',
         path: '/zh-CN/components/steps',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/steps.md').then(
             makeMarkdownRenderer
           )
@@ -997,7 +891,6 @@ export const components = [
         label: 'Property 属性表',
         path: '/zh-CN/components/property',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/property.md').then(
             makeMarkdownRenderer
           )
@@ -1006,7 +899,6 @@ export const components = [
         label: 'QRCode 二维码',
         path: '/zh-CN/components/qrcode',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/qrcode.md').then(
             makeMarkdownRenderer
           )
@@ -1015,7 +907,6 @@ export const components = [
         label: 'Remark 标记',
         path: '/zh-CN/components/remark',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/remark.md').then(
             makeMarkdownRenderer
           )
@@ -1025,7 +916,6 @@ export const components = [
         label: 'SearchBox 搜索框',
         path: '/zh-CN/components/search-box',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/search-box.md').then(
             makeMarkdownRenderer
           )
@@ -1035,7 +925,6 @@ export const components = [
         label: 'Sparkline 走势图',
         path: '/zh-CN/components/sparkline',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/sparkline.md').then(
             makeMarkdownRenderer
           )
@@ -1044,7 +933,6 @@ export const components = [
         label: 'Status 状态',
         path: '/zh-CN/components/status',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/status.md').then(
             makeMarkdownRenderer
           )
@@ -1053,7 +941,6 @@ export const components = [
         label: 'Tpl 模板',
         path: '/zh-CN/components/tpl',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/tpl.md').then(
             makeMarkdownRenderer
           )
@@ -1062,7 +949,6 @@ export const components = [
         label: 'Video 视频',
         path: '/zh-CN/components/video',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/video.md').then(
             makeMarkdownRenderer
           )
@@ -1077,7 +963,6 @@ export const components = [
         label: 'Alert 提示',
         path: '/zh-CN/components/alert',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/alert.md').then(
             makeMarkdownRenderer
           )
@@ -1086,7 +971,6 @@ export const components = [
         label: 'Dialog 对话框',
         path: '/zh-CN/components/dialog',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/dialog.md').then(
             makeMarkdownRenderer
           )
@@ -1095,7 +979,6 @@ export const components = [
         label: 'Drawer 抽屉',
         path: '/zh-CN/components/drawer',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/drawer.md').then(
             makeMarkdownRenderer
           )
@@ -1104,7 +987,6 @@ export const components = [
         label: 'Spinner 加载中',
         path: '/zh-CN/components/spinner',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/spinner.md').then(
             makeMarkdownRenderer
           )
@@ -1119,7 +1001,6 @@ export const components = [
         label: 'Avatar 头像',
         path: '/zh-CN/components/avatar',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/avatar.md').then(
             makeMarkdownRenderer
           )
@@ -1129,7 +1010,6 @@ export const components = [
         label: 'Audio 音频',
         path: '/zh-CN/components/audio',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/audio.md').then(
             makeMarkdownRenderer
           )
@@ -1139,7 +1019,6 @@ export const components = [
         label: 'Tasks 任务操作集合',
         path: '/zh-CN/components/tasks',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/tasks.md').then(
             makeMarkdownRenderer
           )
@@ -1148,7 +1027,6 @@ export const components = [
         label: 'Badge 角标',
         path: '/zh-CN/components/badge',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/badge.md').then(
             makeMarkdownRenderer
           )
@@ -1157,7 +1035,6 @@ export const components = [
         label: 'Wizard 向导',
         path: '/zh-CN/components/wizard',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/wizard.md').then(
             makeMarkdownRenderer
           )
@@ -1166,7 +1043,6 @@ export const components = [
         label: 'Web Component',
         path: '/zh-CN/components/web-component',
         getComponent: () =>
-          // @ts-ignore
           import('../../docs/zh-CN/components/web-component.md').then(
             makeMarkdownRenderer
           )
