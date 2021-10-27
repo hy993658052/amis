@@ -236,7 +236,7 @@ export const components = [
           )
       },
       {
-        label: 'Button-Toolbar 按钮工具栏',
+        label: 'ButtonToolbar 按钮工具栏',
         path: '/zh-CN/components/form/button-toolbar',
         getComponent: () =>
           import('../../docs/zh-CN/components/form/button-toolbar.md').then(
@@ -244,7 +244,7 @@ export const components = [
           )
       },
       {
-        label: 'Button-Group-Select 按钮点选',
+        label: 'ButtonGroupSelect 按钮点选',
         path: '/zh-CN/components/form/button-group-select',
         getComponent: () =>
           import(
@@ -252,7 +252,7 @@ export const components = [
           ).then(makeMarkdownRenderer)
       },
       {
-        label: 'Chained-Select 链式下拉框',
+        label: 'ChainedSelect 链式下拉框',
         path: '/zh-CN/components/form/chain-select',
         getComponent: () =>
           import('../../docs/zh-CN/components/form/chain-select.md').then(
@@ -300,7 +300,7 @@ export const components = [
           )
       },
       {
-        label: 'Condition-Builder 条件组合',
+        label: 'ConditionBuilder 条件组合',
         path: '/zh-CN/components/form/condition-builder',
         getComponent: () =>
           import('../../docs/zh-CN/components/form/condition-builder.md').then(
@@ -436,7 +436,7 @@ export const components = [
           )
       },
       {
-        label: 'Input-Group 输入框组合',
+        label: 'InputGroup 输入框组合',
         path: '/zh-CN/components/form/input-group',
         getComponent: () =>
           import('../../docs/zh-CN/components/form/input-group.md').then(
