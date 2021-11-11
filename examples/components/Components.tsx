@@ -37,7 +37,7 @@ export const components = [
         path: '/zh-CN/components/collapse',
         getComponent: () =>
           // @ts-ignore
-          import('../../docs/zh-CN/components/collapse.md').then(
+          import('../../docs/zh-CN/components/collapse2.md').then(
             makeMarkdownRenderer
           )
       },
