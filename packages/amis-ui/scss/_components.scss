@@ -3243,4 +3243,17 @@
   --Alert-fontColor: var(--colors-neutral-text-4);
   --Alert-title-fontColor: var(--colors-neutral-text-2);
   --Alert-height: var(--sizes-base-20);
+
+  --inputTag-option-height: var(--sizes-base-15);
+  --inputTag-option-color: var(--colors-neutral-text-2);
+  --inputTag-option-fontSize: var(--fonts-size-7);
+  --inputTag-option-fontWeight: var(--fonts-weight-6);
+  --inputTag-option-lineHeight: var(--fonts-lineHeight-2);
+  --inputTag-option-paddingTop: var(--sizes-size-3);
+  --inputTag-option-paddingBottom: var(--sizes-size-6);
+  --inputTag-option-paddingLeft: var(--sizes-size-3);
+  --inputTag-option-paddingRight: var(--sizes-size-6);
+  --inputTag-option-bg-color: var(--colors-neutral-fill-11);
+  --inputTag-option-hover-color: var(--colors-brand-5);
+  --inputTag-option-hover-bg-color: var(--colors-brand-10);
 }
