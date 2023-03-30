@@ -1,0 +1,158 @@
+/**
+ * amis-editor v5.2.5-beta.3
+ * Copyright 2018-2023 @fex
+ */
+
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var tslib = require('tslib');
+var amisEditorCore = require('amis-editor-core');
+var helper = require('../renderer/event-control/helper.js');
+var i18nRuntime = require('i18n-runtime');
+
+var presetColors = ['#2468f2', '#b8babf', '#528eff', '#30bf13', '#f33e3e', '#ff9326', '#fff', '#000'];
+var TagPlugin = /** @class */function (_super) {
+  tslib.__extends(TagPlugin, _super);
+  function TagPlugin() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+    // 关联渲染器名字
+    _this.rendererName = 'tag';
+    _this.$schema = '/schemas/TagSchema.json';
+    // 组件名称
+    _this.name = i18nRuntime.i18n("14d342362f66aa86e2aa1c1e11aa1204");
+    _this.isBaseComponent = true;
+    _this.icon = 'fa fa-tag';
+    _this.pluginIcon = 'tag-plugin';
+    _this.description = i18nRuntime.i18n("77ad0879912d0a306724c319eed113e2");
+    _this.docLink = '/amis/zh-CN/components/tag';
+    _this.tags = [i18nRuntime.i18n("027446c2f9070b0f5b16a18208bf5fc7")];
+    _this.previewSchema = {
+      type: 'tag',
+      label: i18nRuntime.i18n("ee66d7a2d02188816d633d11cf1a8b27"),
+      color: 'processing'
+    };
+    _this.scaffold = {
+      type: 'tag',
+      label: i18nRuntime.i18n("ee66d7a2d02188816d633d11cf1a8b27"),
+      color: 'processing'
+    };
+    _this.panelTitle = i18nRuntime.i18n("14d342362f66aa86e2aa1c1e11aa1204");
+    _this.panelJustify = true;
+    // 事件定义
+    _this.events = [{
+      eventName: 'click',
+      eventLabel: i18nRuntime.i18n("4363c17ebb346b646af55bd8c8075915"),
+      description: i18nRuntime.i18n("7af5e3ef39ff71d39fe3f645c8079124"),
+      dataSchema: [{
+        type: 'object',
+        properties: {
+          nativeEvent: {
+            type: 'object',
+            title: i18nRuntime.i18n("64561733c68085af3d09315c1d4d7ed6")
+          }
+        }
+      }]
+    }, {
+      eventName: 'mouseenter',
+      eventLabel: i18nRuntime.i18n("f6d767f39ba3bf955077a3c0ce81e581"),
+      description: i18nRuntime.i18n("bcdd89d453da0dc0622a2f3189728357"),
+      dataSchema: [{
+        type: 'object',
+        properties: {
+          nativeEvent: {
+            type: 'object',
+            title: i18nRuntime.i18n("64561733c68085af3d09315c1d4d7ed6")
+          }
+        }
+      }]
+    }, {
+      eventName: 'mouseleave',
+      eventLabel: i18nRuntime.i18n("e272b0b8c7fedc670a87075514d9b49f"),
+      description: i18nRuntime.i18n("727309bc724ff237c5e2cdf7a90cf28e"),
+      dataSchema: [{
+        type: 'object',
+        properties: {
+          nativeEvent: {
+            type: 'object',
+            title: i18nRuntime.i18n("64561733c68085af3d09315c1d4d7ed6")
+          }
+        }
+      }]
+    }];
+    // 动作定义
+    _this.actions = [];
+    _this.panelBodyCreator = function (context) {
+      return amisEditorCore.getSchemaTpl('tabs', [{
+        title: i18nRuntime.i18n("24d67862f87f439db7ca957aecb77cce"),
+        body: amisEditorCore.getSchemaTpl('collapseGroup', [{
+          title: i18nRuntime.i18n("4092ed98e9035652d4c9ca9441701ed7"),
+          body: [amisEditorCore.getSchemaTpl('label'), {
+            type: 'button-group-select',
+            label: i18nRuntime.i18n("f0789e79d48f135e5d870753f7a85d05"),
+            name: 'displayMode',
+            value: 'normal',
+            size: 'md',
+            options: [{
+              label: i18nRuntime.i18n("35242cff1266fd3610f124b0e5e76f9b"),
+              value: 'normal'
+            }, {
+              label: i18nRuntime.i18n("0103eb2d3dca70270d1a74e9ec987ac9"),
+              value: 'rounded'
+            }, {
+              label: i18nRuntime.i18n("3fea7ca76cdece641436d7ab0d02ab1b"),
+              value: 'status'
+            }]
+          }, amisEditorCore.getSchemaTpl('icon', {
+            visibleOn: 'data.displayMode === "status"',
+            label: i18nRuntime.i18n("092c4410e162bb3371f2aab804501f24")
+          })]
+        }, amisEditorCore.getSchemaTpl('status')])
+      }, {
+        title: i18nRuntime.i18n("afcde2611bdd13c1e65b4fb6a2f13425"),
+        body: amisEditorCore.getSchemaTpl('collapseGroup', [{
+          title: i18nRuntime.i18n("6b36c6f7ec834692ec6c8e3816349fdd"),
+          body: [{
+            type: 'input-color',
+            label: i18nRuntime.i18n("9970ad07468267e2f309f1467c75bb80"),
+            name: 'color',
+            presetColors: presetColors,
+            pipeOut: amisEditorCore.undefinedPipeOut
+          }, {
+            type: 'input-color',
+            label: i18nRuntime.i18n("2f97db95d75280bfedc5afa72d2c717d"),
+            name: 'style.backgroundColor',
+            presetColors: presetColors,
+            pipeOut: amisEditorCore.undefinedPipeOut
+          }, {
+            type: 'input-color',
+            label: i18nRuntime.i18n("961534b4ea37e4e88aada736b299d063"),
+            name: 'style.borderColor',
+            presetColors: presetColors,
+            pipeOut: amisEditorCore.undefinedPipeOut
+          }, {
+            type: 'input-color',
+            label: i18nRuntime.i18n("ca746b1ff10193a3ce20878dec04a733"),
+            name: 'style.color',
+            presetColors: presetColors,
+            pipeOut: amisEditorCore.undefinedPipeOut
+          }]
+        }, amisEditorCore.getSchemaTpl('style:classNames', {
+          isFormItem: false
+        })])
+      }, {
+        title: i18nRuntime.i18n("10b2761db5a8e089049df39675abc550"),
+        className: 'p-none',
+        body: [amisEditorCore.getSchemaTpl('eventControl', tslib.__assign({
+          name: 'onEvent'
+        }, helper.getEventControlConfig(_this.manager, context)))]
+      }]);
+    };
+    return _this;
+  }
+  return TagPlugin;
+}(amisEditorCore.BasePlugin);
+amisEditorCore.registerEditorPlugin(TagPlugin);
+
+exports.TagPlugin = TagPlugin;

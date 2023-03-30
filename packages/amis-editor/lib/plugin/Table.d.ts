@@ -1,0 +1,30 @@
+import { RendererPluginAction, RendererPluginEvent } from 'amis-editor-core';
+import { BasePlugin, PluginEvent, RegionConfig, RendererInfoResolveEventContext, BasicRendererInfo, InsertEventContext, ScaffoldForm } from 'amis-editor-core';
+import { EditorNodeType } from 'amis-editor-core';
+import { SchemaObject } from 'amis/lib/Schema';
+export declare class TablePlugin extends BasePlugin {
+    rendererName: string;
+    $schema: string;
+    name: string;
+    tags: string[];
+    isBaseComponent: boolean;
+    description: string;
+    docLink: string;
+    icon: string;
+    pluginIcon: string;
+    scaffold: SchemaObject;
+    regions: Array<RegionConfig>;
+    previewSchema: any;
+    get scaffoldForm(): ScaffoldForm;
+    panelTitle: string;
+    events: RendererPluginEvent[];
+    actions: RendererPluginAction[];
+    panelJustify: boolean;
+    panelBodyCreator: (context: BaseEventContext) => any;
+    filterProps(props: any): any;
+    getRendererInfo(context: RendererInfoResolveEventContext): BasicRendererInfo | void;
+    beforeInsert(event: PluginEvent<InsertEventContext>): void;
+    buildDataSchemas(node: EditorNodeType, region?: EditorNodeType, trigger?: EditorNodeType): Promise<any>;
+    editHeaderDetail(id: string): void;
+    editFooterDetail(id: string): void;
+}
