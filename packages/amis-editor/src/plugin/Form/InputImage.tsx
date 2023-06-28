@@ -447,7 +447,7 @@ export class ImageControlPlugin extends BasePlugin {
                     state: ['default', 'hover', 'active'],
                     children: [
                       {
-                        label: '上传图标',
+                        label: '上传图标图标',
                         value: 'iconControlClassName'
                       }
                     ]
@@ -462,7 +462,7 @@ export class ImageControlPlugin extends BasePlugin {
             [
               getSchemaTpl('style:formItem', {renderer: context.info.renderer}),
               {
-                title: '自定义样式',
+                title: '图片上传按钮',
                 key: 'addBtnControlClassName',
                 body: [
                   {

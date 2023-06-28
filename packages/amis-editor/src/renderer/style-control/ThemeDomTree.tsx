@@ -47,7 +47,8 @@ function ThemeDomTree(props: FormControlProps): React.JSX.Element {
               onChange={(value: string) => onDomSelect(value)}
               editable={true}
               onEdit={(item: any) => onDomEdit(item)}
-              editTip="编辑该节点样式源码"
+              editTip="编辑样式源码"
+              showIcon={false}
             />
           </div>
 
