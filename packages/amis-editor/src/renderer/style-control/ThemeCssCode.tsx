@@ -51,7 +51,7 @@ export function AmisThemeCssCodeEditor(props: FormControlProps) {
       themeClass?.forEach(n => {
         const classId = n.extra ? id + '-' + n.extra : id;
         const state = n.state || ['default'];
-        const className = n.value || 'className';
+        const className = n.className || 'className';
         const dom = document.getElementById(classId || '') || null;
         const content = dom?.innerHTML || '';
         const ast = cssParse(content);
@@ -177,6 +177,9 @@ export function AmisThemeCssCodeEditor(props: FormControlProps) {
             } else if (fontStyle.includes(prop)) {
               !cssCode['font:' + state] && (cssCode['font:' + state] = {});
               cssCode['font:' + state][valueMap[prop] || prop] = cssValue;
+            } else if (!!~prop.indexOf('width') || !!~prop.indexOf('height')) {
+              !cssCode['size:' + state] && (cssCode['size:' + state] = {});
+              cssCode['size:' + state][valueMap[prop] || prop] = cssValue;
             } else {
               cssCode[(valueMap[prop] || prop) + ':' + state] = cssValue;
             }

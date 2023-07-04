@@ -16,6 +16,39 @@ setSchemaTpl('style:formItem', ({renderer, schema}: any) => {
   };
 });
 
+setSchemaTpl('style:formItemNew', ({renderer, schema}: any) => {
+  return {
+    title: '表单项',
+    key: 'formItem',
+    body: [
+      getSchemaTpl('formItemMode'),
+      getSchemaTpl('labelHide'),
+      getSchemaTpl('horizontal'),
+      renderer?.sizeMutable !== false ? getSchemaTpl('formItemSize') : null,
+      // getSchemaTpl('formItemInline'),
+      getSchemaTpl('theme:size', {
+        name: 'themeCss.formItemControlClassName.size',
+        label: '尺寸'
+      }),
+      getSchemaTpl('theme:paddingAndMargin', {
+        name: 'themeCss.formItemControlClassName.paddingAndMargin'
+      }),
+      getSchemaTpl('theme:colorPicker', {
+        label: '背景',
+        name: 'themeCss.formItemControlClassName.background',
+        labelMode: 'input',
+        needGradient: true
+      }),
+      getSchemaTpl('theme:border', {
+        name: 'themeCss.formItemControlClassName.border'
+      }),
+      getSchemaTpl('theme:shadow', {
+        name: 'themeCss.formItemControlClassName.shadow'
+      })
+    ].concat(schema)
+  };
+});
+
 setSchemaTpl(
   'style:classNames',
   (config: {
@@ -436,14 +469,26 @@ setSchemaTpl(
     isFormItem?: boolean;
   } = {}) => {
     if (isFormItem) {
+      themeClass.unshift({
+        label: '表单项',
+        extra: 'formItem',
+        value: 'formItemControlClassName',
+        className: 'formItemControlClassName'
+      });
       themeClass.push(
         ...[
           {
             label: 'description',
-            extra: 'description',
-            value: 'descriptionClassName'
+            extra: 'formItem',
+            value: 'descriptionClassName',
+            className: 'descriptionClassName'
           },
-          {label: 'label', extra: 'label', value: 'labelClassName'}
+          {
+            label: 'label',
+            extra: 'formItem',
+            value: 'labelClassName',
+            className: 'labelClassName'
+          }
         ]
       );
     }
@@ -538,6 +583,7 @@ setSchemaTpl('theme:select', (option: any = {}) => {
     label: '尺寸',
     name: `themeCss.className.size:default`,
     options: '${sizesOptions}',
+    isEditorTpl: true,
     ...option
   };
 });
@@ -614,10 +660,10 @@ setSchemaTpl('theme:shadow', (option: any = {}) => {
 // 尺寸选择器
 setSchemaTpl('theme:size', (option: any = {}) => {
   return {
-    type: 'amis-theme-select',
+    mode: 'default',
+    type: 'amis-theme-size-editor',
     label: false,
-    name: `css.className.size`,
-    isEditorTpl: true,
+    name: `themeCss.className.size:default`,
     ...option
   };
 });

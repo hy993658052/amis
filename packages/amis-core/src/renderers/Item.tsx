@@ -942,7 +942,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
         useMobileUI,
         translate: __,
         static: isStatic,
-        staticClassName
+        staticClassName,
+        formItemControlClassName
       } = props;
 
       // 强制不渲染 label 的话
@@ -968,7 +969,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
               [`is-error`]: model && !model.valid,
               [`is-required`]: required
             },
-            model?.errClassNames
+            model?.errClassNames,
+            formItemControlClassName
           )}
           style={style}
         >
@@ -1099,7 +1101,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
         useMobileUI,
         translate: __,
         static: isStatic,
-        staticClassName
+        staticClassName,
+        formItemControlClassName
       } = props;
 
       description = description || desc;
@@ -1114,7 +1117,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
               'is-error': model && !model.valid,
               [`is-required`]: required
             },
-            model?.errClassNames
+            model?.errClassNames,
+            formItemControlClassName
           )}
           style={style}
         >
@@ -1221,7 +1225,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
         useMobileUI,
         translate: __,
         static: isStatic,
-        staticClassName
+        staticClassName,
+        formItemControlClassName
       } = props;
       const labelWidth = props.labelWidth || props.formLabelWidth;
       description = description || desc;
@@ -1236,7 +1241,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
               'is-error': model && !model.valid,
               [`is-required`]: required
             },
-            model?.errClassNames
+            model?.errClassNames,
+            formItemControlClassName
           )}
           style={style}
         >
@@ -1349,7 +1355,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
         useMobileUI,
         translate: __,
         static: isStatic,
-        staticClassName
+        staticClassName,
+        formItemControlClassName
       } = props;
       const labelWidth = props.labelWidth || props.formLabelWidth;
       description = description || desc;
@@ -1364,7 +1371,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
               'is-error': model && !model.valid,
               [`is-required`]: required
             },
-            model?.errClassNames
+            model?.errClassNames,
+            formItemControlClassName
           )}
           style={style}
         >
@@ -1460,7 +1468,8 @@ export class FormItemWrap extends React.Component<FormItemProps> {
       themeCss,
       id,
       labelClassName,
-      descriptionClassName
+      descriptionClassName,
+      formItemControlClassName
     } = this.props;
     const mode = this.props.mode || formMode;
 
@@ -1468,21 +1477,19 @@ export class FormItemWrap extends React.Component<FormItemProps> {
       themeCss || css,
       [
         {
+          key: 'formItemControlClassName',
+          value: formItemControlClassName
+        },
+        {
           key: 'labelClassName',
           value: labelClassName
-        }
-      ],
-      id + '-label'
-    );
-    insertCustomStyle(
-      themeCss || css,
-      [
+        },
         {
           key: 'descriptionClassName',
           value: descriptionClassName
         }
       ],
-      id + '-description'
+      id + '-formItem'
     );
 
     if (wrap === false || inputOnly) {

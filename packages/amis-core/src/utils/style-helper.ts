@@ -136,11 +136,8 @@ export function formatStyle(
         /(\S*[C|c]lassName-\S*)/.test(n) &&
         !!~n.indexOf(
           id
-            ?.replace('u:', '')
-            .replace('-label', '')
-            .replace('-description', '')
-            .replace('-addOn', '')
-            .replace('-icon', '') || ''
+            ?.slice(0, id.indexOf('-') > -1 ? id.indexOf('-') : id.length)
+            .replace('u:', '') || ''
         )
       ) {
         classNameList.push(n);

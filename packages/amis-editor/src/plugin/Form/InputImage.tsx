@@ -24,7 +24,7 @@ const inputStateFunc = (visibleOn: string, state: string) => {
     }),
     getSchemaTpl('theme:colorPicker', {
       label: '文字',
-      name: `${addBtnCssClassName}.color:${state}`,
+      name: `${addBtnCssClassName}.font:${state}.color`,
       labelMode: 'input',
       needGradient: true,
       visibleOn: visibleOn,
@@ -435,32 +435,34 @@ export class ImageControlPlugin extends BasePlugin {
       {
         title: '外观',
         body: [
-          getSchemaTpl('theme:domTree', {
-            themeClass: [
-              {
-                label: '组件最外层',
-                value: 'inputImageControlClassName',
-                children: [
-                  {
-                    label: '图片上传按钮',
-                    value: 'addBtnControlClassName',
-                    state: ['default', 'hover', 'active'],
-                    children: [
-                      {
-                        label: '上传图标图标',
-                        value: 'iconControlClassName'
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            isFormItem: true
-          }),
+          // getSchemaTpl('theme:domTree', {
+          //   themeClass: [
+          //     {
+          //       label: '组件最外层',
+          //       value: 'inputImageControlClassName',
+          //       children: [
+          //         {
+          //           label: '图片上传按钮',
+          //           value: 'addBtnControlClassName',
+          //           state: ['default', 'hover', 'active'],
+          //           children: [
+          //             {
+          //               label: '上传图标图标',
+          //               value: 'iconControlClassName'
+          //             }
+          //           ]
+          //         }
+          //       ]
+          //     }
+          //   ],
+          //   isFormItem: true
+          // }),
           getSchemaTpl(
             'collapseGroup',
             [
-              getSchemaTpl('style:formItem', {renderer: context.info.renderer}),
+              getSchemaTpl('style:formItemNew', {
+                renderer: context.info.renderer
+              }),
               {
                 title: '图片上传按钮',
                 key: 'addBtnControlClassName',
@@ -508,18 +510,46 @@ export class ImageControlPlugin extends BasePlugin {
                     type: 'icon-select',
                     returnSvg: true
                   },
-                  getSchemaTpl('theme:size', {
+                  getSchemaTpl('theme:select', {
                     name: `${IconCssClassName}.width`,
                     label: '图标大小',
                     editorThemePath: `${editorPath}.default.body.icon-size`
                   }),
-                  getSchemaTpl('theme:size', {
+                  getSchemaTpl('theme:select', {
                     name: `${IconCssClassName}.margin-bottom`,
                     label: '图标底边距',
                     editorThemePath: `${editorPath}.default.body.icon-margin`
                   })
                 ]
-              }
+              },
+              getSchemaTpl('theme:cssCode', {
+                themeClass: [
+                  {
+                    label: '组件根节点',
+                    value: '',
+                    extra: 'inputImage',
+                    className: 'inputImageControlClassName',
+                    children: [
+                      {
+                        label: '上传按钮',
+                        extra: 'inputImage',
+                        value: 'addOn',
+                        className: 'addBtnControlClassName',
+                        state: ['default', 'hover', 'active'],
+                        children: [
+                          {
+                            label: '上传按钮/上传图标',
+                            extra: 'inputImage',
+                            value: 'icon',
+                            className: 'iconControlClassName'
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                isFormItem: true
+              })
             ],
             {...context?.schema, configTitle: 'style'}
           )

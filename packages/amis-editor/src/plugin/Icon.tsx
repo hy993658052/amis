@@ -109,7 +109,7 @@ export class IconPlugin extends BasePlugin {
             {
               title: '自定义样式',
               body: [
-                getSchemaTpl('theme:size', {
+                getSchemaTpl('theme:select', {
                   label: '尺寸',
                   name: 'css.className.font.fontSize'
                 }),

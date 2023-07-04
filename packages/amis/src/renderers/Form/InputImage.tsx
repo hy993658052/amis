@@ -1493,7 +1493,11 @@ export default class ImageControl extends React.Component<
       translate: __
     } = this.props;
 
-    insertCustomStyle(themeCss, this.getThemeConfigStyle(this.props), id);
+    insertCustomStyle(
+      themeCss,
+      this.getThemeConfigStyle(this.props),
+      id + '-inputImage'
+    );
 
     const {
       files,
